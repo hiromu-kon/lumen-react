@@ -52,7 +52,7 @@ services:
       context: .
       dockerfile: ./docker/node/Dockerfile
     volumes:
-    - ./src/frontend/:/usr/src/app
+    - ./src/:/usr/src/app
     command: sh -c "cd frontend && npm start"
     ports:
     - "3000:3000"
